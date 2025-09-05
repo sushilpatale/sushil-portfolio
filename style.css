@@ -1,0 +1,180 @@
+﻿/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #f0f8ff, #e6f0ff);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  background: #0d47a1;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 28px;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.home-content h1 {
+  font-size: 32px;
+  color: #0d47a1;
+}
+
+.home-content span {
+  color: #1565c0;
+}
+
+.home-content p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0d47a1;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1565c0;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-list span {
+  background: #1565c0;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills-list span:hover {
+  background: #0d47a1;
+}
+
+/* Contact */
+#contact p, #contact a {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#contact a {
+  color: #1565c0;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0d47a1;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .home-content h1 {
+    font-size: 24px;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
